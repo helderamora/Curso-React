@@ -1,17 +1,17 @@
 import React from 'react'
-import Logo from './componentes/imgs/Capa.png'
-import Eu from './componentes/imgs/Eu.png'
+import Header from './componentes/Header';
+import Corpo from './componentes/Corpo';
+import Dados from './componentes/Dados'
+
 
 export default function App() {
-  const app = () => {
-    return `App - 01`
-  }
   return (
-    <div>
-
-      <p>{app}</p>
-      <img src={Logo} />
-      <img src={Eu} />
-    </div>
+    <>
+      <Header />
+      <Corpo />
+      <Dados canal='My first application'
+        youtube='youtube.com.br/'
+        curso='React.js' />
+    </>
   )
 }
