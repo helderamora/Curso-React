@@ -1,22 +1,22 @@
-import React from 'react'
-import './App.css'
+import React, { useState } from 'react'
 import Header from './componentes/Header'
+import Numero from './componentes/Numero'
+import './App.css'
 
 
 export default function App() {
 
-  const textoDestaque = {
-    color: 'gray',
-    fontSize: '1.5em'
-  }
+  const [num, setNum] = useState(0)
 
   return (
     <>
       <Header />
+      <p>Valor de state num em App: {num}</p>
+      <Numero num={num} setNum={setNum} />
       <section className='caixa'>
-        <h1 style={{ color: 'tomato' }}>My first application</h1>
-        <h2 style={textoDestaque}>Curso React</h2>
-        <p className='texto'>Vem codar!</p>
+        <h1>My first application</h1>
+        <h2>Curso React</h2>
+        <p>Vem codar!</p>
       </section>
     </>
   )
