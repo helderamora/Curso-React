@@ -1,17 +1,23 @@
 import React from 'react'
-import Header from './componentes/Header';
-import Corpo from './componentes/Corpo';
-import Dados from './componentes/Dados'
+import './App.css'
+import Header from './componentes/Header'
 
 
 export default function App() {
+
+  const textoDestaque = {
+    color: 'gray',
+    fontSize: '1.5em'
+  }
+
   return (
     <>
       <Header />
-      <Corpo />
-      <Dados canal='My first application'
-        youtube='youtube.com.br/'
-        curso='React.js' />
+      <section className='caixa'>
+        <h1 style={{ color: 'tomato' }}>My first application</h1>
+        <h2 style={textoDestaque}>Curso React</h2>
+        <p className='texto'>Vem codar!</p>
+      </section>
     </>
   )
 }
