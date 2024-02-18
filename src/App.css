@@ -10,3 +10,14 @@
   font-size: 1.2em;
   font-height: 700;
 }
+
+.box-img {
+  padding: 0 16px;
+  display: flex;
+  justify-content: center;
+}
+
+.image {
+  width: 80%;
+  height: 300px;
+}
